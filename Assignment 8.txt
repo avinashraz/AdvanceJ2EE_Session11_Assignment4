@@ -1,0 +1,54 @@
+1. What is DDL, DCL & DML?
+Ans:
+DML (Data Manipulation Language)
+
+->DML statements affect records in a table. These are basic operations we perform on data such as selecting a few records from a table, inserting new records, deleting unnecessary records, and updating/modifying existing records.
+DML statements include the following:
+SELECT – select records from a table
+INSERT – insert new records
+UPDATE – update/Modify existing records
+DELETE – delete existing records
+
+
+->DDL (Data Definition Language)
+
+DDL statements are used to alter/modify a database or table structure and schema. These statements handle the design and storage of database objects.
+CREATE – create a new Table, database, schema
+ALTER – alter existing table, column description
+DROP – delete existing objects from database
+
+
+->DCL (Data Control Language)
+
+DCL statements control the level of access that users have on database objects.
+GRANT – allows users to read/write on certain database objects
+REVOKE – keeps users from read/write permission on database objects
+
+2. What is the difference between truncate and delete?
+Ans:
+DROP & TRUNCATE statement both are DDL, or Data Definition Languages. - DROP statement is used to delete or remove a table from a database. - TRUNCATE statement is used to delete/remove all records form a table, the table still exists in the database.
+
+3. What is the use of alter table?
+Ans:
+The MySQL ALTER TABLE statement is used to add, modify, or drop/delete columns in a table. The MySQL ALTER TABLE statement is also used to rename a table.
+
+4. Explain about having by, order by, group by clause
+Ans:
+->ORDER BY Clause
+* SELECT returns records in no particular  order.
+* To ensure a specific order use the ORDER BY  clause.
+* ORDER BY allows sorting by one or more  columns.
+* Records can be returned in ascending or  descending order.
+
+->GROUP BY Clause
+* The GROUP BY clause groups records into  summary rows.
+* GROUP BY returns one records for each group.
+* GROUP BY typically also involves aggregates: COUNT, MAX, SUM, AVG, etc.
+* GROUP BY can group by one or more columns.
+
+->HAVING Clause
+* HAVING filters records that work on  summarized GROUP BY results.
+* HAVING applies to summarized group records,  whereas WHERE applies to individual records.
+* Only the groups that meet the HAVING criteria  will be returned.
+* HAVING requires that a GROUP BY clause is  present.
+*WHERE and HAVING can be in the same query.
